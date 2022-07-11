@@ -1,4 +1,5 @@
 package com.ll.exam;
+import java.util.Scanner;
 
 public class App {
     public void run() {
@@ -9,9 +10,16 @@ public class App {
         outer:
         while(true) {
             System.out.printf("명령) ");
-           령String cmd = sc.nextLine().trim();
+            String cmd = sc.nextLine().trim();
 
             switch (cmd) {
+                case "등록":
+                    System.out.printf("명언 : ");
+                    String content = sc.nextLine().trim();
+                    System.out.printf("작가 : ");
+                    String author = sc.nextLine().trim();
+                    System.out.printf("1번 명언이 등록되었습니다.\n");
+                    break;
                 case "종료":
                     break outer;
 
